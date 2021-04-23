@@ -1,1 +1,26 @@
-/* No CSS *//*# sourceMappingURL=BackgroundArt.css.map */
+.background-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  justify-self: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 60vh;
+  width: 85vw;
+  margin: 10vh;
+}
+
+.background-image {
+  overflow: hidden;
+}
+/*# sourceMappingURL=BackgroundArt.css.map */
