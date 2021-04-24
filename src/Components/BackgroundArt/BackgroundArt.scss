@@ -1,0 +1,15 @@
+.background-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+  justify-self: center;
+  align-items: center;
+  height: 60vh;
+  width: 85vw;
+  margin: 10vh;
+}
+
+.background-image {
+  overflow: hidden;
+}

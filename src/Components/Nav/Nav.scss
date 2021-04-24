@@ -1,0 +1,49 @@
+@import "../../styles/mixins";
+
+.nav-bar {
+  width: 95%;
+  height: 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1% 0 2%;
+  align-self: center;
+  margin: 0;
+}
+
+.scroll-link {
+  font-size: 12pt;
+  &:hover {
+    cursor: pointer;
+  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.active-scroll-link {
+  color: aquamarine;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.active-dot-1 {
+  @include active-dot;
+  background-color: #ff0027;
+}
+.active-dot-2 {
+  @include active-dot;
+  background-color: #02507e;
+}
+.active-dot-3 {
+  @include active-dot;
+  background-color: #ffb600;
+}
+
+.hidden {
+  display: none;
+}
