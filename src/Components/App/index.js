@@ -5,7 +5,6 @@ import { Route, Switch } from "react-router";
 import Grid from "../Grid";
 import WorkDetails from "../WorkDetails";
 import { useStore } from "../../store";
-import { Helmet } from "react-helmet";
 
 function App() {
   const store = useStore((state) => state);
@@ -14,10 +13,6 @@ function App() {
 
   return (
     <div className="App">
-      <Helmet>
-        <meta charSet="utf-8" />
-        <title>Cooper Terrones Design</title>
-      </Helmet>
       <Switch>
         <Route exact path="/work" render={() => <Work />} />
         <Route
