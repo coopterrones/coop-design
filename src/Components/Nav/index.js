@@ -14,7 +14,7 @@ const Nav = () => {
         className="scroll-link"
         onMouseEnter={() => updateLogo((logo) => (logo = cLogoLight))}
         onMouseLeave={() => updateLogo((logo) => (logo = cLogoDark))}>
-        <img src={logo} height="50px" alt="c logo nav"/>
+        <img src={logo} height="50px" alt="c logo nav" />
         <div className="active-dot-1 hidden"></div>
       </Link>
       <a href="mailto:cooper.terrones@outlook.com?Subject=Hi Coop!">
