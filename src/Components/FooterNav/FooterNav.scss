@@ -1,0 +1,19 @@
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.footer-nav-container {
+  width: 95%;
+  height: 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0 2%;
+  align-self: center;
+}
+
+#blockColorblindContent {
+  display: none;
+}
