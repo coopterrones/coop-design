@@ -12,3 +12,5 @@ function moveCursor(e) {
   outterCursor.style.left = `${x}px`;
   outterCursor.style.top = `${y}px`;
 }
+
+// const showMailCursorText = () => {};
