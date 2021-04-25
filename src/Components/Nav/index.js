@@ -3,20 +3,8 @@ import "./Nav.scss";
 import { Link } from "react-router-dom";
 import cLogoDark from "../../Assets/c-logo-black.png";
 import cLogoLight from "../../Assets/c-logo-light.png";
-
-const innerCursor = document.getElementById("inner-cursor");
-
-const showMailCursor = () => {
-  innerCursor.classList.add("mail-active");
-  innerCursor.classList.remove("inner-cursor");
-  innerCursor.innerText = "✉️";
-};
-
-const hideMailCursor = () => {
-  innerCursor.classList.add("inner-cursor");
-  innerCursor.classList.remove("mail-active");
-  innerCursor.innerText = "";
-};
+import { showMailCursor } from "../../CursorActions/cursorActions";
+import { hideMailCursor } from "../../CursorActions/cursorActions";
 
 const Nav = () => {
   const [logo, updateLogo] = useState(cLogoDark);

@@ -22,7 +22,7 @@
   transition: 0.05s;
 }
 
-.mail-active {
+.hover-active {
   transition: 250ms;
   display: flex;
   flex-direction: column;
