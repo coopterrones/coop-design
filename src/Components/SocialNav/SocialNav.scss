@@ -15,4 +15,8 @@
 .social-link {
   transform: rotate(-180deg);
   margin: 2rem 0 0 0;
+  &:hover {
+    transition: 750ms;
+    color: gray;
+  }
 }

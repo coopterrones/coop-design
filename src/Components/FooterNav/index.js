@@ -5,9 +5,15 @@ import "./FooterNav.scss";
 const FooterNav = () => {
   return (
     <div className="footer-nav-container">
-      <Link to="/work">work.</Link>
-      <Link to="/film">film.</Link>
-      <Link to="/sandbox">sandbox.</Link>
+      <Link to="/work" className="footer-link">
+        work.
+      </Link>
+      <Link to="/film" className="footer-link">
+        film.
+      </Link>
+      <Link to="/sandbox" className="footer-link">
+        sandbox.
+      </Link>
     </div>
   );
 };

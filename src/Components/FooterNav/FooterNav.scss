@@ -1,6 +1,13 @@
-a {
+.footer-link {
+  transition: 350ms;
   text-decoration: none;
   color: black;
+
+  &:hover {
+    transition: 350ms;
+    transform: scale(1.05) translateY(-5px);
+    color: grey;
+  }
 }
 
 .footer-nav-container {
