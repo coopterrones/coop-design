@@ -20,7 +20,7 @@ function App() {
           path="/sandbox"
           render={() => (
             <Grid
-              header="This is my sandbox. A safe space to experiment and flex my imagination."
+              header="This is my playground. A safe space to experiment and flex my imagination."
               subheader="A place
             to let my mind wander and grow."
               items={sandboxItems}
