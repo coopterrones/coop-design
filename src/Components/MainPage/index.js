@@ -9,7 +9,7 @@ const MainPage = () => {
   return (
     <section name="main" className="main-page-wrapper">
       <Nav />
-      <BackgroundArt />
+      <BackgroundArt/>
       <SocialNav></SocialNav>
       <FooterNav></FooterNav>
     </section>
