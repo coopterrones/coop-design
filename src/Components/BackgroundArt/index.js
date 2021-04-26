@@ -5,7 +5,7 @@ import { AnimatePresence, motion } from "framer-motion";
 
 const BackgroundArt = () => {
   return (
-    <AnimatePresence>
+    <AnimatePresence exitBeforeEnter>
       <motion.div
         initial={{ opacity: 0, translateY: -50 }}
         animate={{ opacity: 1, translateY: 0 }}
