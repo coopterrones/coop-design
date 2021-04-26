@@ -19,7 +19,7 @@ function App() {
           <Route exact path="/work" render={() => <Work />} />
           <Route
             exact
-            path="/sandbox"
+            path="/playground"
             render={() => (
               <Grid
                 header="This is my playground. A safe space to experiment and flex my imagination."

@@ -5,6 +5,7 @@ import FooterNav from "../FooterNav";
 import "./Grid.scss";
 
 const Grid = ({ header, subheader, items }) => {
+  console.log(items);
   return (
     <section className="grid-container">
       <Nav />
