@@ -5,12 +5,16 @@ import cLogoDark from "../../Assets/c-logo-black.png";
 import cLogoLight from "../../Assets/c-logo-light.png";
 import { showMailCursor } from "../../CursorActions/cursorActions";
 import { hideMailCursor } from "../../CursorActions/cursorActions";
-
+import { AnimatePresence, motion } from "framer-motion";
 const Nav = () => {
   const [logo, updateLogo] = useState(cLogoDark);
 
   return (
-    <div className="nav-bar">
+    <motion.div
+      initial={{ opacity: 0, translateY: -250 }}
+      animate={{ opacity: 1, translateY: 0 }}
+      transition={{ type: "tween", duration: 2 }}
+      className="nav-bar">
       <Link
         to="/"
         className="scroll-link"
@@ -37,7 +41,7 @@ const Nav = () => {
         onMouseLeave={hideMailCursor}>
         get in touch.
       </a>
-    </div>
+    </motion.div>
   );
 };
 

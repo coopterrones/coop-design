@@ -19,7 +19,7 @@ const FooterNav = () => {
         animate={{ opacity: 1, translateY: 0 }}
         transition={{
           type: "tween",
-          duration: 3,
+          duration: 2,
         }}
         className="footer-nav-container">
         <Link
