@@ -9,7 +9,7 @@ const BackgroundArt = () => {
       <motion.div
         initial={{ opacity: 0, translateY: -50 }}
         animate={{ opacity: 1, translateY: 0 }}
-        transition={{ type: "tween", duration: 2 }}
+        transition={{ type: "tween", duration: 0.75 }}
         exit={{ opacity: 0 }}
         className="background-container">
         <img
