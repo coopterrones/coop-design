@@ -7,9 +7,9 @@ const BackgroundArt = () => {
   return (
     <AnimatePresence>
       <motion.div
-        initial={{ opacity: 0, translateY: -100 }}
+        initial={{ opacity: 0, translateY: -50 }}
         animate={{ opacity: 1, translateY: 0 }}
-        transition={{ type: "spring", duration: 3 }}
+        transition={{ type: "tween", duration: 3 }}
         exit={{ opacity: 0 }}
         className="background-container">
         <img

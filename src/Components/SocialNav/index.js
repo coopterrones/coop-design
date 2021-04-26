@@ -8,7 +8,7 @@ const SocialNav = () => {
       <motion.div
         initial={{ opacity: 0, translateX: 250 }}
         animate={{ opacity: 1, translateX: 0 }}
-        transition={{ type: "spring", duration: 5 }}
+        transition={{ type: "tween", duration: 3, }}
         className="social-nav-container">
         <a className="social-link" href="https://github.com/coopterrones">
           github
