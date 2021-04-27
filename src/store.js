@@ -8,6 +8,7 @@ export const useStore = create((set) => ({
   ],
   sandbox: [
     {
+      id: 1,
       name: "Cappua",
       description:
         "Cappua was an app made with the music industry in mind. The idea was to try and serve the ever frustrating music industry a product that would allow users, to connect and make music together. The MVP existed as a deliverable battle rap app where beats would be featured each month. Users would download the monthly insturmental and upload their verse to the competition page. This project was completed over a 1.5 week sprint.",
@@ -16,6 +17,7 @@ export const useStore = create((set) => ({
       image: "placeholder",
     },
     {
+      id: 2,
       name: "Intention Timer",
       description: "asdf",
       tech: "Vanilla JavaScript, HTML, CSS",
@@ -23,6 +25,7 @@ export const useStore = create((set) => ({
       image: "placeholder",
     },
     {
+      id: 3,
       name: "Slapjack",
       description: "asdf",
       tech: "Vanilla JavaScript, HTML, CSS",
@@ -30,6 +33,7 @@ export const useStore = create((set) => ({
       image: "placeholder",
     },
     {
+      id: 4,
       name: "Overlook",
       description: "asdf",
       tech: "Vanilla JavaSript, HTML, CSS, ASYNC JS, Mocha, Chai",
@@ -37,6 +41,7 @@ export const useStore = create((set) => ({
       image: "placeholder",
     },
     {
+      id: 5,
       name: "Rancid Tomatillos",
       description: "asdf",
       tech: "React, Hooks, Sass, ASYNC, Cypress, React Testing Library, Jest",
@@ -44,6 +49,7 @@ export const useStore = create((set) => ({
       image: "placeholder",
     },
     {
+      id: 6,
       name: "Favo",
       description: "asdf",
       tech:

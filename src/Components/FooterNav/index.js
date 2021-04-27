@@ -37,7 +37,7 @@ const FooterNav = () => {
           film.
         </Link>
         <Link
-          to="/sandbox"
+          to="/playground"
           className="footer-link"
           onMouseEnter={showPlaygroundCursor}
           onMouseLeave={hidePlaygroundCursor}>

@@ -10,11 +10,12 @@ const Nav = () => {
   const [logo, updateLogo] = useState(cLogoDark);
 
   return (
-    <AnimatePresence>
+    <AnimatePresence exitBeforeEnter>
       <motion.div
         initial={{ opacity: 0, translateY: -250 }}
         animate={{ opacity: 1, translateY: 0 }}
         transition={{ type: "tween", duration: 2 }}
+        exit={{ opacity: 0, translateY: -250 }}
         className="nav-bar">
         <Link
           to="/"

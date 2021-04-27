@@ -17,14 +17,16 @@
 
 .grid-items-container {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
   align-self: center;
   justify-self: center;
-  align-items: center;
+  align-items: flex-start;
   height: 57.5vh;
   width: 85vw;
   margin: 10vh;
+  overflow: scroll;
 }
 
 .sandbox-items {

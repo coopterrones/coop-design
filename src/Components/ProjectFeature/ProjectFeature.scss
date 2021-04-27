@@ -1,0 +1,16 @@
+.project-feature-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-self: center;
+  justify-self: center;
+  align-items: center;
+  height: 64.5vh;
+  width: 85vw;
+  margin: 2.5vh;
+  overflow: scroll;
+}
+
+.project-feature-description {
+  width: 65%;
+}
