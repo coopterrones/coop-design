@@ -4,7 +4,7 @@ import "./GridItem.scss";
 
 const GridItem = ({ id, name, description, tech, link, image }) => {
   return (
-    <Link id={id} to={`/playground-${id}`} className="grid-item-container">
+    <Link id={id} to={`/playground/${id}`} className="grid-item-container">
       <div
         className="grid-item-image-container"
         style={{
