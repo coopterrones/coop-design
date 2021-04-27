@@ -12,11 +12,37 @@
 }
 
 .grid-item-image-container {
-  height: 85%;
-  width: 85%;
+  position: relative;
+  height: 82.5%;
+  width: 82.5%;
   border-radius: 5px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
+}
+
+.grid-item-container-background {
+  z-index: 1;
+  position: absolute;
+  height: 12.5rem;
+  width: 12.5rem;
+  display: flex;
+  border-radius: 5px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  &:hover {
+    z-index: 0;
+  }
+}
+
+.background-gif-video {
+  z-index: 0;
+  position: absolute;
+  height: 15rem;
+  &:hover {
+    z-index: 1;
+  }
 }
