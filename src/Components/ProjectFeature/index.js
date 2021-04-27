@@ -12,6 +12,7 @@ const ProjectFeature = ({ id }) => {
       <h3 className="project-feature-name">{project.name}</h3>
       <img
         className="project-feature-image"
+        alt={`${project.name} demo`}
         src={`https://htmlcolors.com/gradients-images/34-asana-color-gradient.jpg`}
         height="50%"
       />
