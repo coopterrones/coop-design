@@ -41,7 +41,8 @@ const Nav = () => {
         <a
           href="mailto:cooper.terrones@outlook.com?Subject=Coop Design - get in touch"
           onMouseEnter={showMailCursor}
-          onMouseLeave={hideMailCursor}>
+          onMouseLeave={hideMailCursor}
+          className="mail-to-link">
           get in touch.
         </a>
       </motion.div>

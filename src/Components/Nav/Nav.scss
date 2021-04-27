@@ -14,12 +14,19 @@
 
 .scroll-link {
   font-size: 12pt;
-  &:hover {
-    cursor: pointer;
-  }
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.mail-to-link {
+  transition: 350ms;
+  padding: 1rem;
+  &:hover {
+    transition: 350ms;
+    transform: scale(1.05) translateY(-5px);
+    color: grey;
+  }
 }
 
 .about-me-scroll-container {
