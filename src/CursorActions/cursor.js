@@ -1,9 +1,7 @@
 let innerCursor = document.querySelector("#inner-cursor");
 let outterCursor = document.querySelector("#outter-cursor");
 
-document.addEventListener("mousemove", moveCursor);
-
-function moveCursor(e) {
+export function moveCursor(e) {
   let x = e.clientX;
   let y = e.clientY;
 
@@ -12,5 +10,3 @@ function moveCursor(e) {
   outterCursor.style.left = `${x}px`;
   outterCursor.style.top = `${y}px`;
 }
-
-// const showMailCursorText = () => {};
