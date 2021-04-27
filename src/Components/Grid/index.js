@@ -21,7 +21,7 @@ const Grid = ({ header, subheader, items }) => {
               description={item.description}
               tech={item.tech}
               link={item.link}
-              image={item.image}
+              gif={item.gif}
             />
           );
         })}
