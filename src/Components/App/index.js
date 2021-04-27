@@ -6,6 +6,7 @@ import Grid from "../Grid";
 import WorkDetails from "../WorkDetails";
 import { useStore } from "../../store";
 import { AnimatePresence } from "framer-motion";
+import Project from "../Project";
 
 function App() {
   const store = useStore((state) => state);
@@ -50,6 +51,7 @@ function App() {
             render={() => <WorkDetails name="Poppn Co." />}
           />
           <Route exact path="/" render={() => <MainPage />} />
+          <Route path="/playground/:id" component={Project}></Route>
         </Switch>
       </div>
     </AnimatePresence>
