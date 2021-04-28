@@ -15,3 +15,10 @@
   width: 65%;
 }
 
+.github-link-logo {
+  transition: 500ms;
+  &:hover {
+    transition: 500ms;
+    transform: translateY(-5px);
+  }
+}
