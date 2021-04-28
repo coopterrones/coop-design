@@ -18,11 +18,10 @@
 .grid-items-container {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-around;
   align-self: center;
   justify-self: center;
-  align-items: flex-start;
   height: 57.5vh;
   width: 85vw;
   margin: 10vh;
