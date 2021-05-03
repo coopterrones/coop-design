@@ -38,6 +38,7 @@
   align-items: center;
   height: 25vh;
   width: 25vw;
+  padding: 5rem;
 }
 
 .work-preview-right {
@@ -47,6 +48,24 @@
   display: flex;
   height: 25vh;
   width: 25vw;
+  padding: 5rem;
+}
+
+.work-preview-gif-left {
+  transition: 350ms;
+  border-radius: 15px;
+  background-color: white;
+  padding: 1rem;
+  width: 85%;
+}
+
+.work-preview-gif-right {
+  transition: 350ms;
+  border-radius: 15px;
+  background-color: white;
+  padding: 1rem;
+  width: 85%;
+  margin-left: 2.5rem;
 }
 
 .work-list {

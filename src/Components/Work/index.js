@@ -5,18 +5,46 @@ import { Link } from "react-router-dom";
 import "./Work.scss";
 import SocialNav from "../SocialNav";
 
-const Work = () => {
+const Work = ({ workItems }) => {
   const [previewLeftContent, setPreviewLeftContent] = useState(null);
   const [previewRightContent, setPreviewRightContent] = useState(null);
   const previewLeft = useRef(null);
   const previewRight = useRef(null);
 
-  const displayWorkPreviewLeft = () => {
-    setPreviewLeftContent(<p> Hi </p>);
+  const displayWorkPreviewLeft = (image) => {
+    setPreviewLeftContent(
+      <div className="preview-wrapper">
+        <video
+          className="work-preview-gif-left"
+          autoPlay
+          loop
+          muted
+          playsInline
+          src={image}></video>
+      </div>
+    );
   };
 
-  const displayWorkPreviewRight = () => {
-    setPreviewRightContent(<p>Hi</p>);
+  const displayWorkPreviewRight = (image) => {
+    setPreviewRightContent(
+      <div className="preview-wrapper">
+        <video
+          className="work-preview-gif-right"
+          autoPlay
+          loop
+          muted
+          playsInline
+          src={image}></video>
+      </div>
+    );
+  };
+
+  const hideWorkPreviewLeft = () => {
+    setPreviewLeftContent(null);
+  };
+
+  const hideWorkPreviewRight = () => {
+    setPreviewRightContent(null);
   };
 
   return (
@@ -32,24 +60,32 @@ const Work = () => {
       </div>
       <div className="work-list-container">
         <ul className="work-list">
-          <li className="work-list-item">
-            <Link
-              className="list-link"
-              to="/work-canoe-club"
-              onMouseOver={displayWorkPreviewLeft}>
-              <span>01.</span>
-              <h2>Canoe Club</h2>
-            </Link>
-          </li>
-          <li className="work-list-item">
-            <Link
-              className="list-link"
-              to="/work-poppn-co"
-              onMouseOver={displayWorkPreviewRight}>
-              <span>02.</span>
-              <h2>Poppn Co.</h2>
-            </Link>
-          </li>
+          {workItems.map((item, i) => {
+            return (
+              <li className="work-list-item" key={i}>
+                <Link
+                  className="list-link"
+                  to={`/work-${item.slug}`}
+                  onMouseOver={() => {
+                    if (i % 2 === 0) {
+                      displayWorkPreviewLeft(item.image);
+                    } else {
+                      displayWorkPreviewRight(item.image);
+                    }
+                  }}
+                  onMouseLeave={() => {
+                    if (i % 2 === 0) {
+                      hideWorkPreviewLeft();
+                    } else {
+                      hideWorkPreviewRight();
+                    }
+                  }}>
+                  <span>{`0${item.id}.`}</span>
+                  <h2>{item.name}</h2>
+                </Link>
+              </li>
+            );
+          })}
         </ul>
       </div>
       <SocialNav />
