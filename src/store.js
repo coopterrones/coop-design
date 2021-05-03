@@ -5,6 +5,7 @@ export const useStore = create((set) => ({
     {
       id: 1,
       name: "Canoe Club",
+      slug: "canoe-club",
       description:
         "At Canoe Club I was fortunate enough to wear a lot of hats. The experience has allowed me to learn the in's and out's that go into starting a small business. I've seen and been apart of the growth of in-store and online sales. This website uses Shopfiy and Shipstation. Our small team handled everything including in-store sales, customer service, online-order fulfillment, producing content for social media and E-Commerce platform, and everything in between.",
       theProblem:
@@ -13,11 +14,12 @@ export const useStore = create((set) => ({
         "Menswear of Appreciation. Provide a curated selection for customers looking for unique quality from all over the world. Provide the best customer service possible replicating the one of a kind in store experience that provides a new light to the old and cold ways of shopping for nice clothing.",
       services:
         "Many things, but mainly; Customer Relations Manager, Asst. Producer for social and E-Commerce Platform, Social Media Personality.",
-      image: "./Assets/canoe-club-preview.png",
+      image: "https://media.giphy.com/media/EM7wPHa22dW0H1KMfY/giphy.mp4",
     },
     {
       id: 2,
       name: "Poppn Co.",
+      slug: "poppn-co",
       description:
         "Poppn Co. provides a new way to pay your tab. The Poppn Co. is a startup looking to be the future of payment processing for your favorite venues.",
       theProblem:
@@ -26,12 +28,12 @@ export const useStore = create((set) => ({
         "Let's let the bartenders get back to their main focus of creating well-crafted cocktails. Never forget to close out. Never go back the next morning to retreive your card. Order ahead or order as you go. Close your tab when you are ready to head to your next adventure for the night. Close out with the Poppn Payment system.",
       services:
         "Creation early stage marketing landing page. Creation of business marketing website as the startup and app grow. Advising client app creation in React Native.",
-      image: "./Assets/poppn-preview.png",
+      image: "https://media.giphy.com/media/QWvyIFeWnI2bTnTmlL/giphy.mp4",
     },
-    { name: "Highland Style", description: "asdf", image: "placeholder" },
     {
       id: 3,
       name: "Highland Style",
+      slug: "highland-style",
       description: "",
       theProblem: "",
       methodology: "",
