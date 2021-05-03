@@ -12,17 +12,25 @@ const Work = ({ workItems }) => {
   const previewRight = useRef(null);
 
   const displayWorkPreviewLeft = (image) => {
-    setPreviewLeftContent(
-      <div className="preview-wrapper">
-        <video
-          className="work-preview-gif-left"
-          autoPlay
-          loop
-          muted
-          playsInline
-          src={image}></video>
-      </div>
-    );
+    if (image) {
+      setPreviewLeftContent(
+        <div className="preview-wrapper">
+          <video
+            className="work-preview-gif-left"
+            autoPlay
+            loop
+            muted
+            playsInline
+            src={image}></video>
+        </div>
+      );
+    } else {
+      setPreviewLeftContent(
+        <div className="preview-wrapper">
+          <h2 className="preview-holder">Preview Coming Soon!</h2>
+        </div>
+      );
+    }
   };
 
   const displayWorkPreviewRight = (image) => {
