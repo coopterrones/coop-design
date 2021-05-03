@@ -13,11 +13,17 @@ function App() {
 
   const sandboxItems = store.sandbox;
 
+  const workItems = store.work;
+
   return (
     <AnimatePresence>
       <div className="App">
         <Switch>
-          <Route exact path="/work" render={() => <Work />} />
+          <Route
+            exact
+            path="/work"
+            render={() => <Work workItems={workItems} />}
+          />
           <Route
             exact
             path="/playground"
