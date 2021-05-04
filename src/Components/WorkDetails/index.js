@@ -75,13 +75,13 @@ const WorkDetails = ({ name }) => {
       <Nav />
       <div className="work-details-container">
         <h1 className="work-details-title">{correctWork.name}</h1>
-        <video
-          className="work-details-gif"
-          autoPlay
-          loop
-          muted
-          playsInline
-          src={correctWork.image}></video>
+          <video
+            className="work-details-gif"
+            autoPlay
+            loop
+            muted
+            playsInline
+            src={correctWork.image}></video>
         <a href={link}>
           <h3 className="work-link">Link.</h3>
         </a>
