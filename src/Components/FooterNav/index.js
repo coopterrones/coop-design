@@ -29,13 +29,13 @@ const FooterNav = () => {
           onMouseLeave={hideWorkCursor}>
           work.
         </Link>
-        <Link
+        {/* <Link
           to="/film"
           className="footer-link"
           onMouseEnter={showfilmCursor}
           onMouseLeave={hideFilmCursor}>
           film.
-        </Link>
+        </Link> */}
         <Link
           to="/playground"
           className="footer-link"
