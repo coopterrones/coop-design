@@ -37,3 +37,15 @@
   background-color: transparent;
   pointer-events: none;
 }
+
+@media only screen and (max-width: 600px) {
+  .inner-cursor {
+    border: transparent;
+    background-color: transparent;
+  }
+
+  #outter-cursor {
+    border: transparent;
+    background-color: transparent;
+  }
+}
