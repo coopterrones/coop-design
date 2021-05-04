@@ -15,6 +15,10 @@ export const useStore = create((set) => ({
       services:
         "Many things, but mainly; Customer Relations Manager, Asst. Producer for social and E-Commerce Platform, Social Media Personality.",
       image: "https://media.giphy.com/media/EM7wPHa22dW0H1KMfY/giphy.mp4",
+      production: false,
+      link: "https://www.shopcanoeclub.com",
+      instagram: "https://www.instagram.com/shopcanoeclub/?hl=en",
+      youtube: "https://www.youtube.com/channel/UCTVB69BO5zH1DuS9oUPM3Nw",
     },
     {
       id: 2,
@@ -29,6 +33,10 @@ export const useStore = create((set) => ({
       services:
         "Creation early stage marketing landing page. Creation of business marketing website as the startup and app grow. Advising client app creation in React Native.",
       image: "https://media.giphy.com/media/QWvyIFeWnI2bTnTmlL/giphy.mp4",
+      production: true,
+      link: "https://poppn-web-app.netlify.app/",
+      instagram: null,
+      youtube: null,
     },
     {
       id: 3,
@@ -39,6 +47,8 @@ export const useStore = create((set) => ({
       methodology: "",
       services: "",
       image: "",
+      production: true,
+      links: "",
     },
   ],
   sandbox: [
