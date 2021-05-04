@@ -4,8 +4,8 @@ import "./FooterNav.scss";
 import {
   showPlaygroundCursor,
   hidePlaygroundCursor,
-  showfilmCursor,
-  hideFilmCursor,
+  // showfilmCursor,
+  // hideFilmCursor,
   showWorkCursor,
   hideWorkCursor,
 } from "../../CursorActions/cursorActions";
