@@ -93,3 +93,11 @@
     transition: 500ms;
   }
 }
+
+@media only screen and (max-width: 600px) {
+  .work-preview-gif-right,
+  .work-preview-gif-left {
+    padding: 0.25rem;
+    width: 50vw;
+  }
+}
