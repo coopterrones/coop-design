@@ -14,7 +14,11 @@ export const useStore = create((set) => ({
         "Menswear of Appreciation. Provide a curated selection for customers looking for unique quality from all over the world. Provide the best customer service possible replicating the one of a kind in store experience that provides a new light to the old and cold ways of shopping for nice clothing.",
       services:
         "Many things, but mainly; Customer Relations Manager, Asst. Producer for social and E-Commerce Platform, Social Media Personality.",
-      image: "https://media.giphy.com/media/EM7wPHa22dW0H1KMfY/giphy.mp4",
+      image: "https://media.giphy.com/media/1XbpNpnoPHZOxAtdy0/giphy.mp4",
+      production: false,
+      link: "https://www.shopcanoeclub.com",
+      instagram: "https://www.instagram.com/shopcanoeclub/?hl=en",
+      youtube: "https://www.youtube.com/channel/UCTVB69BO5zH1DuS9oUPM3Nw",
     },
     {
       id: 2,
@@ -29,16 +33,28 @@ export const useStore = create((set) => ({
       services:
         "Creation early stage marketing landing page. Creation of business marketing website as the startup and app grow. Advising client app creation in React Native.",
       image: "https://media.giphy.com/media/QWvyIFeWnI2bTnTmlL/giphy.mp4",
+      production: true,
+      link: "https://poppn-web-app.netlify.app/",
+      instagram: null,
+      youtube: null,
     },
     {
       id: 3,
       name: "Highland Style",
       slug: "highland-style",
-      description: "",
-      theProblem: "",
-      methodology: "",
-      services: "",
-      image: "",
+      description:
+        "Highland brings to the market a toughtfully crafted hair product meant to style, cleanse, and condition your hair. Rethink your hair care routine with sustainably crafted and health-conscious products that deliver on the promise of style",
+      theProblem:
+        "The abundance of hair products in the world today not only makes it tough to decide, but additionally makes for a surplus of products and ingredients that are harmful to our environment.",
+      methodology:
+        "Develop a simple product made with simple ingredients and built on a foundation of values that are for humanity and our planet. Oh yeah, it also makes your hair super healthy and handsome.",
+      services:
+        "Brand Consulting. Early brand establishment. Landing page and website creation as the brand develops. Producing -- photo and video production shoots for early brand content.",
+      image: "https://media.giphy.com/media/QKndZxdjBsOh0fKG19/giphy.mp4",
+      production: true,
+      links: "https://www.highland.style/",
+      instagram: "https://www.instagram.com/stylewithhighland/",
+      youtube: null,
     },
   ],
   sandbox: [

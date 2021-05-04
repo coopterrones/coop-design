@@ -12,7 +12,149 @@
   align-self: center;
   justify-self: center;
   align-items: center;
-  height: 60vh;
+  height: fit-content;
   width: 85vw;
-  margin: 10vh;
+  overflow: scroll;
+}
+
+.work-details-title {
+  z-index: 50;
+  margin-top: 175vh;
+  margin-bottom: -2.5rem;
+  font-size: 175px;
+}
+
+.work-details-gif {
+  z-index: -100;
+}
+
+.work-link {
+  transition: 500ms;
+  &:hover {
+    transition: 500ms;
+    transform: translateY(-5px);
+    color: grey;
+  }
+}
+
+.the-problem-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 10vh 0 10vh 0;
+}
+
+.the-problem-the {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  font-size: 150px;
+  margin: 0;
+}
+
+.the-problem-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  font-size: 75px;
+  margin: 0;
+}
+
+.the-problem-description {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 25vw;
+  margin: 0 3.5rem;
+}
+
+.the-solution-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 10vh 0 10vh 0;
+}
+
+.the-solution-the {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  font-size: 150px;
+  margin: 0;
+}
+
+.the-solution-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  font-size: 75px;
+  margin: 0;
+}
+
+.the-solution-contents {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 25vw;
+  margin: 0 3.5rem;
+}
+
+.the-details-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 10vh 0 10vh 0;
+}
+
+.the-details-the {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  font-size: 150px;
+  margin: 0;
+}
+
+.the-details-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  font-size: 75px;
+  margin: 0;
+}
+
+.the-details-contents {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 25vw;
+  margin: 0 3.5rem;
+}
+
+.instagram-icon-link {
+  transition: 500ms;
+  margin: 0 0.5rem 0 0.5rem;
+  &:hover {
+    transition: 500ms;
+    transform: translateY(-5px);
+  }
+}
+
+.youtube-icon-link {
+  transition: 500ms;
+  margin: 0 0.5rem 0 0.5rem;
+  &:hover {
+    transition: 500ms;
+    transform: translateY(-5px);
+  }
+}
+
+.youtube-icon-not-available {
+  margin: 0 0.5rem 0 0.5rem;
+}
+
+.instagram-icon-not-available {
+  margin: 0 0.5rem 0 0.5rem;
 }
