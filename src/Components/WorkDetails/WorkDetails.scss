@@ -162,3 +162,34 @@
 .instagram-icon-not-available {
   margin: 0 0.5rem 0 0.5rem;
 }
+
+@media only screen and (max-width: 600px) {
+  .work-details-title {
+    font-size: xx-large;
+    margin-top: 255vh;
+    margin-bottom: 1rem;
+  }
+
+  .work-details-container {
+    height: 250vh;
+    width: 85vw;
+  }
+
+  .work-details-gif {
+    width: 65vw;
+    padding: 0.75rem;
+  }
+
+  .the-details-wrapper,
+  .the-problem-wrapper,
+  .the-solution-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .the-problem-description,
+  .the-solution-contents,
+  .the-details-contents {
+    width: 80%;
+  }
+}
