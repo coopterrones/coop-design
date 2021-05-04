@@ -39,3 +39,11 @@
   width: 85vw;
   margin: 10vh;
 }
+
+@media only screen and (max-width: 600px) {
+  .grid-items-container {
+    flex-wrap: wrap;
+    flex-direction: row;
+    height: 85vh;
+  }
+}
