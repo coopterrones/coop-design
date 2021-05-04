@@ -49,13 +49,17 @@ function App() {
           <Route
             exact
             path="/work-canoe-club"
-            render={() => <WorkDetails name="Canoe Club" />}
+            render={() => <WorkDetails name={"Canoe Club"} />}
           />
           <Route
             exact
             path="/work-poppn-co"
-            render={() => <WorkDetails name="Poppn Co." />}
+            render={() => <WorkDetails name={"Poppn"} />}
           />
+          <Route
+            exact
+            path="/work-highland-style"
+            render={() => <WorkDetails name={"Highland Style"} />}></Route>
           <Route exact path="/" render={() => <MainPage />} />
           <Route path="/playground/:id" component={Project}></Route>
         </Switch>
