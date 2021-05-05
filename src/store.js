@@ -70,7 +70,8 @@ export const useStore = create((set) => ({
     {
       id: 2,
       name: "Favo",
-      description: "asdf",
+      description:
+        "Favo is a volunteer app that allowed users to browse available volunteer opportunities and sign up. This small MVP was created over a weeks period and used a lot of new technology.",
       tech:
         "React, Hooks, ExpressJS, Cypress, Sass, ASYNC, React Testing Library, Jest",
       link: "https://github.com/coopterrones/favo",
@@ -79,7 +80,8 @@ export const useStore = create((set) => ({
     {
       id: 3,
       name: "Intention Timer",
-      description: "asdf",
+      description:
+        "The Intention Timer was created as a Timer application that would allow users to set a specified time and work through a task. This project was created in Javascript.",
       tech: "Vanilla JavaScript, HTML, CSS",
       link: "https://github.com/coopterrones/intention-timer",
       gif: "https://media.giphy.com/media/8Ca6pTdQsuqSQSiigx/source.mp4",
@@ -87,7 +89,8 @@ export const useStore = create((set) => ({
     {
       id: 4,
       name: "What's Cookin",
-      description: "",
+      description:
+        "What's cookin is a Turing School project that is intended to practice working with a database and more specifcally working with multiple datasets while practicing with Array prototype methods. ",
       tech: "Vanilla JavaScript, HTML, CSS, mocha, chai",
       link: "https://github.com/coopterrones/whats-cookin",
       gif: "https://media.giphy.com/media/rh80oLhh9IFPo6Xh8m/source.mp4",
@@ -95,7 +98,8 @@ export const useStore = create((set) => ({
     {
       id: 5,
       name: "Slapjack",
-      description: "asdf",
+      description:
+        "The game is slapjack. This project is from Turing School and is intended to practice game creation and behavior. This project was created in Javascript.",
       tech: "Vanilla JavaScript, HTML, CSS",
       link: "https://github.com/coopterrones/slapjack",
       gif: "https://media.giphy.com/media/NZ0TAOxwrj5RSDtUfV/source.mp4",
@@ -103,7 +107,8 @@ export const useStore = create((set) => ({
     {
       id: 6,
       name: "Overlook",
-      description: "asdf",
+      description:
+        "Overlook hotel is a project from Turing School. This app was created with Javascript and was intended to practice ASYNC and Network Requests. The app was intended to mimic a hotel booking application. My UI / UX were me testing out the use of neumorphism and could use some small updates to represent a hotel booking application.",
       tech: "Vanilla JavaSript, HTML, CSS, ASYNC JS, Mocha, Chai",
       link: "https://github.com/coopterrones/Overlook",
       gif: "https://media.giphy.com/media/2aadUZzLa8sp5K8diw/source.mp4",
@@ -111,10 +116,20 @@ export const useStore = create((set) => ({
     {
       id: 7,
       name: "Rancid Tomatillos",
-      description: "asdf",
+      description:
+        "Rancid Tomatillos was a React project from Turing school. This project was created with the goal of becoming fluent in ASYNC and network requests in a react app. The app is a movie watch list app that allows the user to view movies with information. The user can then add to their watch list. ",
       tech: "React, Hooks, Sass, ASYNC, Cypress, React Testing Library, Jest",
       link: "https://github.com/coopterrones/rancid-tomatoes",
       gif: "https://media.giphy.com/media/FGP88kzB6HMpD3uQNG/source.mp4",
+    },
+    {
+      id: 8,
+      name: "Gatsby Blog",
+      description:
+        "Experimenting with the Gatsby library. This project was created to practice with Gatsby plugins allowing the user to create a blog.",
+      tech: "React, Hooks, CSS Modules, Gatsby, Contentful Plugin",
+      link: "https://github.com/coopterrones/gatsby-practice",
+      gif: "https://media.giphy.com/media/youuECxZne5aViZ20h/giphy.mp4",
     },
   ],
 }));
