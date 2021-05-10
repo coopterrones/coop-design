@@ -26,7 +26,7 @@ function App() {
           />
           <Route
             exact
-            path="/playground"
+            path="/projects"
             render={() => (
               <Grid
                 header="This is my playground. A safe space to experiment and flex my imagination."
