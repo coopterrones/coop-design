@@ -50,7 +50,7 @@ export const useStore = create((set) => ({
         "Develop a simple product made with simple ingredients and built on a foundation of values that are for humanity and our planet. Oh yeah, it also makes your hair super healthy and handsome.",
       services:
         "Brand Consulting. Early brand establishment. Landing page and website creation as the brand develops. Producing -- photo and video production shoots for early brand content.",
-      image: "https://media.giphy.com/media/QKndZxdjBsOh0fKG19/giphy.mp4",
+      image: "https://media.giphy.com/media/lKMqIfbS3gs994IiGd/giphy.mp4",
       production: true,
       links: "https://www.highland.style/",
       instagram: "https://www.instagram.com/stylewithhighland/",
