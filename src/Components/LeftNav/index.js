@@ -12,7 +12,9 @@ const LeftNav = () => {
         className="left-nav-container">
         <a
           className="left-nav-link"
-          href="https://www.linkedin.com/in/cooper-terrones-39b508185/">
+          href="https://www.linkedin.com/in/cooper-terrones-39b508185/"
+          target="_blank"
+          rel="noreferrer">
           linkedin
         </a>
       </motion.div>
