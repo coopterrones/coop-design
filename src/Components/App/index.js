@@ -1,14 +1,21 @@
 import "./App.scss";
 import MainPage from "../MainPage/index";
 import Work from "../Work/index";
-import { Route, Switch } from "react-router";
+import { Route, Switch, useLocation } from "react-router";
 import WorkDetails from "../WorkDetails";
 import Vibe from "../Vibe";
 import { useStore } from "../../store";
 import { AnimatePresence } from "framer-motion";
+import { useEffect } from "react";
+import { resetCursor } from "../../CursorActions/cursorActions";
 
 function App() {
   const workItems = useStore((state) => state.work);
+  const location = useLocation();
+
+  useEffect(() => {
+    resetCursor();
+  }, [location]);
 
   return (
     <AnimatePresence>

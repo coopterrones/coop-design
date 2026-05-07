@@ -47,3 +47,9 @@ export const hideWorkCursor = () => {
   innerCursor.classList.add("inner-cursor");
   innerCursor.innerText = "";
 };
+
+export const resetCursor = () => {
+  innerCursor.classList.add("inner-cursor");
+  innerCursor.classList.remove("hover-active");
+  innerCursor.innerText = "";
+};
