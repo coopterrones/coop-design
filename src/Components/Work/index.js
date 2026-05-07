@@ -4,6 +4,7 @@ import Nav from "../Nav";
 import { Link } from "react-router-dom";
 import "./Work.scss";
 import SocialNav from "../SocialNav";
+import LeftNav from "../LeftNav";
 
 const Work = ({ workItems }) => {
   const [previewLeftContent, setPreviewLeftContent] = useState(null);
@@ -11,38 +12,26 @@ const Work = ({ workItems }) => {
   const previewLeft = useRef(null);
   const previewRight = useRef(null);
 
-  const displayWorkPreviewLeft = (image) => {
-    if (image) {
-      setPreviewLeftContent(
-        <div className="preview-wrapper">
-          <video
-            className="work-preview-gif-left"
-            autoPlay
-            loop
-            muted
-            playsInline
-            src={image}></video>
-        </div>
-      );
-    } else {
-      setPreviewLeftContent(
-        <div className="preview-wrapper">
-          <h2 className="preview-holder">Preview Coming Soon!</h2>
-        </div>
-      );
-    }
+  const displayWorkPreviewLeft = (item) => {
+    setPreviewLeftContent(
+      <div className="preview-wrapper">
+        <img
+          className="work-preview-gif-left"
+          src={item.image}
+          alt={item.name}
+        />
+      </div>
+    );
   };
 
-  const displayWorkPreviewRight = (image) => {
+  const displayWorkPreviewRight = (item) => {
     setPreviewRightContent(
       <div className="preview-wrapper">
-        <video
+        <img
           className="work-preview-gif-right"
-          autoPlay
-          loop
-          muted
-          playsInline
-          src={image}></video>
+          src={item.image}
+          alt={item.name}
+        />
       </div>
     );
   };
@@ -76,9 +65,9 @@ const Work = ({ workItems }) => {
                   to={`/work-${item.slug}`}
                   onMouseOver={() => {
                     if (i % 2 === 0) {
-                      displayWorkPreviewLeft(item.image);
+                      displayWorkPreviewLeft(item);
                     } else {
-                      displayWorkPreviewRight(item.image);
+                      displayWorkPreviewRight(item);
                     }
                   }}
                   onMouseLeave={() => {
@@ -96,6 +85,7 @@ const Work = ({ workItems }) => {
           })}
         </ul>
       </div>
+      <LeftNav />
       <SocialNav />
       <FooterNav />
     </section>

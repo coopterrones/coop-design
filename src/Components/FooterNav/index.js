@@ -37,11 +37,11 @@ const FooterNav = () => {
           film.
         </Link> */}
         <Link
-          to="/projects"
+          to="/vibe"
           className="footer-link"
           onMouseEnter={showPlaygroundCursor}
           onMouseLeave={hidePlaygroundCursor}>
-          projects.
+          vibe.
         </Link>
       </motion.div>
     </AnimatePresence>

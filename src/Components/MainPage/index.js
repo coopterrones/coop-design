@@ -4,12 +4,14 @@ import FooterNav from "../FooterNav/index";
 import "./MainPage.scss";
 import BackgroundArt from "../BackgroundArt/index";
 import SocialNav from "../SocialNav/index";
+import LeftNav from "../LeftNav/index";
 
 const MainPage = () => {
   return (
     <section name="main" className="main-page-wrapper">
       <Nav />
       <BackgroundArt/>
+      <LeftNav />
       <SocialNav></SocialNav>
       <FooterNav></FooterNav>
     </section>

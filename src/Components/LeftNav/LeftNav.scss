@@ -1,0 +1,25 @@
+.left-nav-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1.5rem;
+  position: absolute;
+  writing-mode: vertical-rl;
+  width: fit-content;
+  height: 15vh;
+  top: 45%;
+  transform: translateY(-50%);
+  left: 0px;
+  margin-left: 2.5%;
+}
+
+.left-nav-link {
+  transform: rotate(-180deg);
+  margin: 0;
+  text-decoration: none;
+  color: black;
+  &:hover {
+    transition: 750ms;
+    color: gray;
+  }
+}

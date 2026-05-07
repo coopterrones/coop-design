@@ -3,193 +3,86 @@
   width: 100vw;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
+  position: relative;
+}
+
+.work-details-scroll-area {
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 .work-details-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-self: center;
-  justify-self: center;
   align-items: center;
-  height: fit-content;
-  width: 85vw;
-  overflow: scroll;
+  text-align: center;
+  width: 55vw;
+  margin: 0 auto;
+  padding: 8vh 0 10vh;
 }
 
 .work-details-title {
-  z-index: 50;
-  margin-top: 175vh;
-  margin-bottom: -2.5rem;
-  font-size: 175px;
+  font-size: clamp(4rem, 12vw, 10rem);
+  line-height: 1;
+  margin: 0 0 1rem 0;
 }
 
-.work-details-gif {
-  z-index: -100;
-  background-color: white;
-  padding: 1.5rem;
-  border-radius: 15px;
-  box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.3);
-}
-
-.work-link {
-  transition: 500ms;
-  &:hover {
-    transition: 500ms;
-    transform: translateY(-5px);
-    color: grey;
-  }
-}
-
-.the-problem-wrapper {
+.work-details-meta {
   display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-  margin: 10vh 0 10vh 0;
+  gap: 2rem;
+  margin-bottom: 3rem;
 }
 
-.the-problem-the {
+.work-details-role {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.work-details-team {
+  font-size: 0.9rem;
+  color: grey;
+}
+
+.work-details-tagline {
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.5;
+  margin: 0 0 4rem 0;
+}
+
+.work-details-body {
   display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  font-size: 150px;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.work-details-paragraph {
+  font-size: 1rem;
+  line-height: 1.8;
   margin: 0;
-}
-
-.the-problem-title {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  font-size: 75px;
-  margin: 0;
-}
-
-.the-problem-description {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  width: 25vw;
-  margin: 0 3.5rem;
-}
-
-.the-solution-wrapper {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-  margin: 10vh 0 10vh 0;
-}
-
-.the-solution-the {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  font-size: 150px;
-  margin: 0;
-}
-
-.the-solution-title {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  font-size: 75px;
-  margin: 0;
-}
-
-.the-solution-contents {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  width: 25vw;
-  margin: 0 3.5rem;
-}
-
-.the-details-wrapper {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-  margin: 10vh 0 10vh 0;
-}
-
-.the-details-the {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  font-size: 150px;
-  margin: 0;
-}
-
-.the-details-title {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  font-size: 75px;
-  margin: 0;
-}
-
-.the-details-contents {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  width: 25vw;
-  margin: 0 3.5rem;
-}
-
-.instagram-icon-link {
-  transition: 500ms;
-  margin: 0 0.5rem 0 0.5rem;
-  &:hover {
-    transition: 500ms;
-    transform: translateY(-5px);
-  }
-}
-
-.youtube-icon-link {
-  transition: 500ms;
-  margin: 0 0.5rem 0 0.5rem;
-  &:hover {
-    transition: 500ms;
-    transform: translateY(-5px);
-  }
-}
-
-.youtube-icon-not-available {
-  margin: 0 0.5rem 0 0.5rem;
-}
-
-.instagram-icon-not-available {
-  margin: 0 0.5rem 0 0.5rem;
+  color: #333;
 }
 
 @media only screen and (max-width: 600px) {
-  .work-details-title {
-    font-size: xx-large;
-    margin-top: 255vh;
-    margin-bottom: 1rem;
-  }
-
   .work-details-container {
-    height: 250vh;
-    width: 85vw;
+    width: 80vw;
+    padding: 6vh 0 8vh;
   }
 
-  .work-details-gif {
-    width: 65vw;
-    padding: 0.75rem;
-  }
-
-  .the-details-wrapper,
-  .the-problem-wrapper,
-  .the-solution-wrapper {
-    display: flex;
+  .work-details-meta {
     flex-direction: column;
+    gap: 0.25rem;
   }
 
-  .the-problem-description,
-  .the-solution-contents,
-  .the-details-contents {
-    width: 80%;
+  .work-details-tagline {
+    font-size: 1.1rem;
   }
 }
