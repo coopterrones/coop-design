@@ -20,6 +20,8 @@
   align-items: center;
   padding: 0 0 2%;
   align-self: center;
+  position: relative;
+  z-index: 10;
 }
 
 #blockColorblindContent {

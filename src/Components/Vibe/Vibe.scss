@@ -3,12 +3,14 @@
   width: 100vw;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   overflow: hidden;
   position: relative;
 }
 
 .vibe-scroll-area {
-  flex: 1;
+  position: absolute;
+  inset: 0;
   overflow-x: auto;
   overflow-y: hidden;
 
@@ -22,11 +24,18 @@
 .vibe-canvas {
   position: relative;
   height: 100%;
-  width: 240vw;
+  width: 320vw;
 }
 
 .vibe-item-anchor {
   position: absolute;
+}
+
+.vibe-favicon {
+  width: 14px;
+  height: 14px;
+  border-radius: 2px;
+  flex-shrink: 0;
 }
 
 .vibe-item {
@@ -52,13 +61,16 @@
   }
 
   &--link {
-    background: black;
-    color: white;
+    background: white;
+    color: black;
     text-decoration: none;
     cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
 
     &.vibe-item--held {
-      color: #ccc;
+      color: #555;
     }
   }
 

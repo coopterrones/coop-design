@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
+import { motion } from 'framer-motion';
 
-const VibeItem = ({ item, layout }) => {
+const VibeItem = ({ item, layout, index }) => {
   const { cx, cy, rotation } = layout;
   const [held, setHeld] = useState(false);
 
@@ -18,9 +19,12 @@ const VibeItem = ({ item, layout }) => {
   const itemClass = `vibe-item vibe-item--${item.type}${held ? ' vibe-item--held' : ''}`;
 
   return (
-    <div
+    <motion.div
       className="vibe-item-anchor"
       style={anchorStyle}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ type: 'tween', duration: 2, delay: index * 0.015 }}
       onMouseEnter={() => setHeld(true)}
       onMouseLeave={() => setHeld(false)}
     >
@@ -38,12 +42,17 @@ const VibeItem = ({ item, layout }) => {
           rel="noreferrer"
           className={itemClass}
         >
-          {item.label || item.content}
+          <img
+            src={`https://www.google.com/s2/favicons?domain=${new URL(item.content).hostname}&sz=16`}
+            alt=""
+            className="vibe-favicon"
+          />
+          {item.content}
         </a>
       ) : (
         <div className={itemClass}>{item.content}</div>
       )}
-    </div>
+    </motion.div>
   );
 };
 
